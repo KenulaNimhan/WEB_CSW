@@ -6,7 +6,7 @@
     <title>Gallery</title>
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="Styles/gallery.css">
-    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/styles.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,36 +16,55 @@
 <body>
     <!--HEADER-->
     <header>
-        <a href="#" class="logo">
-            <img src="Logos/image.png" alt="">
+        <a href="home.html" class="logo">
+            <img src="Logos/logoMain.png" alt="Website Logo">
         </a>
         <div class="navbar">
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#">FeedBack</a></li>
+                <li><a href="#">SiteMap</a></li>
+                <li><a href="#">Team</a></li>
             </ul>
         </div>
     </header>
     <!-- PERSONALISATION BAR -->
     <div class="personalisationBar" id="personalisationBar">
         <!-- FONT SELECTION -->
-        <span>Font:</span>
-        <span class="roboto-regular font_option" id="roboto-regular">Aa</span>
-        <span class="montserrat font_option" id="montserrat">Aa</span>
-        <span class="eb-garamond font_option" id="eb-garamond">Aa</span>
+        <div class="font_selection">
+            <span>Font &RightArrow;</span>
+            <span class="roboto-regular font_option" id="roboto-regular"> Aa </span>
+            <span class="montserrat font_option" id="montserrat"> Aa </span>
+            <span class="eb-garamond font_option" id="eb-garamond"> Aa </span>
+        </div>
+        <svg width="24" height="24" class="seperator">
+            <line x1="12" y1="0" x2="12" y2="24" stroke="black">
+        </svg>
+        <!-- FONT SIZE SELECTION -->
+        <div class="font_size_selection">
+            <span>Font Size &RightArrow;</span>
+            <span id="size_16"> 16 </span>
+            <span id="size_18"> 18 </span>
+            <span id="size_20"> 20 </span>
+        </div>
+        <svg width="24" height="24" class="seperator">
+            <line x1="12" y1="0" x2="12" y2="24" stroke="black">
+        </svg>
         <!-- COLOR SCHEME SELECTION -->
-        <span>Color: </span>
-        <svg width="20" height="20">
-            <circle cx="10" cy="10" r="9" stroke="black" fill="white" stroke-width="1">
-        </svg>
-        <svg width="20" height="20">
-            <circle cx="10" cy="10" r="9" stroke="black" fill="beige" stroke-width="1">
-        </svg>
-        <svg width="20" height="20">
-            <circle cx="10" cy="10" r="9" stroke="black" fill="black" stroke-width="1">
-        </svg>
+        <div class="color_selection">
+            <span>Color &RightArrow;</span>
+            <svg width="20" height="20" id="white_bg_option">
+                <circle cx="10" cy="10" r="9" stroke="black" fill="white" stroke-width="1">
+            </svg>
+            <svg width="20" height="20" id="beige_bg_option">
+                <circle cx="10" cy="10" r="9" stroke="black" fill="#F4ECD8" stroke-width="1">
+            </svg>
+            <svg width="20" height="20" id="black_bg_option">
+                <circle cx="10" cy="10" r="9" stroke="black" fill="black" stroke-width="1">
+            </svg>
+        </div>
     </div>
 
     <!--GALLERY-->
@@ -134,7 +153,7 @@
                 <h2>Marine Ecosystems</h2>
                 <hr>
             </div>
-            <img src="images/forGallery/marineEcosysCrop.jpg" alt="" class="extended_view_image_preview">
+            <img src="images/forGallery/marineEcosysCrop.jpg" alt="Image of Corals" class="extended_view_image_preview">
             <div class="extended_view_text">
                 <p>
                     Marine ecosystems refer to the communities of organisms and their interactions within saltwater environments, including oceans, seas, and coastal areas. These ecosystems are characterized by high biodiversity and complex food webs, and they play a crucial role in regulating global climate, nutrient cycling, and providing resources for human populations
@@ -154,12 +173,12 @@
             </div>
         </div>
 
-        <div class="extended_view roboto-regular" id="item_2_info">
+        <div class="extended_view" id="item_2_info">
             <div class="extended_view_heading">
                 <h2>Ocean Acidification</h2>
                 <hr>
             </div>
-            <img src="images/forGallery/oceanAcidification.jpg" alt="" class="extended_view_image_preview">    
+            <img src="images/forGallery/oceanAcidification.jpg" alt="Image of seahorse" class="extended_view_image_preview">    
             <div class="extended_view_text">
                 <p>
                     Ocean acidification is a process driven by the absorption of carbon dioxide (CO2) from the atmosphere into the ocean, leading to a decrease in the pH of seawater. When CO2 dissolves in seawater, it reacts with water molecules to form carbonic acid, which increases the concentration of hydrogen ions, consequently lowering the pH and making the water more acidic.
@@ -188,7 +207,7 @@
                 <h2>Sustainable Fishing</h2>
                 <hr>
             </div>
-            <img src="images/forGallery/sustainableFishing.jpg" alt="" class="extended_view_image_preview">
+            <img src="images/forGallery/sustainableFishing.jpg" alt="Image representing large scale fishing" class="extended_view_image_preview">
             <div class="extended_view_text">
                 <p>
                     Sustainable fishing refers to the practice of harvesting fish and other aquatic organisms in a manner that ensures the long-term health and productivity of the targeted species, as well as the marine ecosystems in which they live. This approach aims to maintain the balance between fishing activities and the natural regeneration of fish populations, thereby preserving biodiversity, supporting livelihoods, and safeguarding food security for present and future generations.
@@ -232,7 +251,7 @@
                 <h2>Marine Pollution</h2>
                 <hr>
             </div>
-            <img src="images/forGallery/marinePolu.jpg" alt="" class="extended_view_image_preview">    
+            <img src="images/forGallery/marinePolu.jpg" alt="Turtle caught up in plastic waste" class="extended_view_image_preview">    
             <div class="extended_view_text">
                 <p>
                     Marine pollution refers to the introduction of harmful substances or contaminants into the marine environment, including oceans, seas, estuaries, and coastal areas. These pollutants can originate from various sources, including industrial activities, agricultural runoff, urban runoff, shipping, oil spills, and improper waste disposal.
@@ -268,7 +287,7 @@
                 <h2>Public Awareness</h2>
                 <hr>
             </div>
-            <img src="images/forGallery/publicAwareness.webp" alt="" class="extended_view_image_preview">    
+            <img src="images/forGallery/publicAwareness.webp" alt="Image of two divers" class="extended_view_image_preview">    
             <div class="extended_view_text">
                 <p>
                     Raising public awareness about preserving marine life is essential for promoting conservation efforts and encouraging sustainable practices to protect ocean ecosystems. Here are some strategies for raising awareness:
@@ -299,7 +318,7 @@
                 <h2>Sustainable Tourism</h2>
                 <hr>
             </div>
-            <img src="images/forGallery/tourism.jpeg" alt="" class="extended_view_image_preview">    
+            <img src="images/forGallery/tourism.jpeg" alt="Tourist attraction location" class="extended_view_image_preview">    
             <div class="extended_view_text">
                 <p>
                     Sustainable tourism related to marine life involves promoting responsible travel practices that minimize negative impacts on marine ecosystems while maximizing benefits for local communities and conservation efforts. Here are key aspects of sustainable marine tourism:
@@ -330,7 +349,7 @@
                 <h2>Marine Debris Cleanup</h2>
                 <hr>
             </div>
-            <img src="images/forGallery/debrisCleanup.jpg" alt="" class="extended_view_image_preview">    
+            <img src="images/forGallery/debrisCleanup.jpg" alt="Photo of ocean cleaning" class="extended_view_image_preview">    
             <div class="extended_view_text">
                 <p>
                     Marine debris cleanup efforts are crucial for mitigating the harmful impacts of pollution on ocean ecosystems and marine life. Organizing cleanup activities along coastlines, beaches, and in marine environments helps remove litter, plastic debris, and other waste that threaten marine biodiversity and degrade habitats. These cleanup initiatives not only improve the aesthetic appeal of coastal areas but also contribute to the health and resilience of marine ecosystems by reducing the risk of entanglement, ingestion, and habitat destruction for marine species.
@@ -351,7 +370,7 @@
                 <h2>Sea Law</h2>
                 <hr>
             </div>
-            <img src="images/forGallery/seaLow.jpg" alt="" class="extended_view_image_preview">    
+            <img src="images/forGallery/seaLaw.jpg" alt="Container ship image" class="extended_view_image_preview">    
             <div class="extended_view_text">
                 <p>
                     Sea law, also known as maritime law or admiralty law, is a body of legal principles and regulations that govern activities and interactions on the seas and oceans. It encompasses a wide range of issues related to navigation, commerce, environmental protection, and the rights and responsibilities of states, vessels, and individuals operating in maritime areas. Sea law is primarily based on international conventions, treaties, customary practices, and national laws, and it plays a crucial role in regulating maritime activities and resolving disputes among maritime stakeholders.
@@ -387,7 +406,7 @@
                 <h2>Waste Management</h2>
                 <hr>
             </div>
-            <img src="images/forGallery/wasteManagement.jpeg" alt="" class="extended_view_image_preview">    
+            <img src="images/forGallery/wasteManagement.jpeg" alt="pool of water filled with waste" class="extended_view_image_preview">    
             <div class="extended_view_text">
                 <p>
                     Marine waste management is a critical aspect of preserving the health and integrity of our oceans and coastal environments. It involves the systematic collection, disposal, and recycling of waste generated by human activities in marine and coastal areas. Effective marine waste management strategies aim to reduce pollution, mitigate ecological harm, and promote sustainable practices to protect marine biodiversity and ecosystems.
@@ -408,7 +427,7 @@
                 <h2>Coastal Development</h2>
                 <hr>
             </div>
-            <img src="images/forGallery/coast.jpg" alt="" class="extended_view_image_preview">    
+            <img src="images/forGallery/coast.jpg" alt="beach coast environment" class="extended_view_image_preview">    
             <div class="extended_view_text">
                 <p>
                     Coastal development refers to human activities and infrastructure development along coastal areas, which are highly dynamic and ecologically sensitive environments where land meets the sea. Coastal development encompasses a wide range of activities, including residential and commercial construction, tourism development, port and harbor infrastructure, agriculture, and industrial facilities. While coastal development can bring economic benefits and opportunities for communities, it also presents significant challenges and risks to coastal ecosystems, habitats, and natural resources.
@@ -444,7 +463,7 @@
                 <h2>Small Scale Fishers</h2>
                 <hr>
             </div>
-            <img src="images/forGallery/fishing.jpeg" alt="" class="extended_view_image_preview">    
+            <img src="images/forGallery/fishing.jpeg" alt="Two fishermen on a boat" class="extended_view_image_preview">    
             <div class="extended_view_text">
                 <p>
                     Small-scale fishers play a crucial role in coastal communities and contribute significantly to global fisheries production, food security, and livelihoods. These fishers typically operate in nearshore waters using traditional or low-impact fishing methods such as handlines, traps, and small nets, and they often rely on small vessels or artisanal fishing boats. The importance of small-scale fishers stems from several key factors:
@@ -479,7 +498,7 @@
                 <h2>Ocean Governance</h2>
                 <hr>
             </div>
-            <img src="images/forGallery/ocean.jpg" alt="" class="extended_view_image_preview">    
+            <img src="images/forGallery/ocean.jpg" alt="ocean view" class="extended_view_image_preview">    
             <div class="extended_view_text">
                 <p>
                     Ocean governance refers to the comprehensive framework of laws, policies, institutions, and practices that govern human activities in marine environments and ensure the sustainable use and conservation of ocean resources. With over 70% of the Earth's surface covered by oceans, effective ocean governance is essential for addressing a wide range of interconnected challenges, including overfishing, marine pollution, habitat destruction, climate change, and maritime security threats. Ocean governance involves multiple stakeholders at local, national, regional, and global levels, working collaboratively to manage marine resources and protect marine ecosystems for present and future generations.
@@ -502,7 +521,7 @@
     </div>
 
     <footer>
-        <img src="Logos/image.png" alt="">
+        <img src="Logos/logoMain.png" alt="">
         <span>Life Below Water</span>
         <span>page editors</span>
         <div class="page_editor_links">
@@ -519,5 +538,6 @@
     </footer>
 
     <script src="JS/gallery.js"></script>
+    <script src="JS/header.js"></script>
 </body>
 </html>

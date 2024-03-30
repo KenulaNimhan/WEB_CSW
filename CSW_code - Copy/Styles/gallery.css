@@ -5,7 +5,7 @@ body{
     max-width: 100%;
 }
 
-/* FONTS */
+/* FONTS*/
 
 .eb-garamond {
   font-family: "EB Garamond", serif;
@@ -29,6 +29,8 @@ body{
     position: relative;
     height: 50px;
 }
+
+/* GALLERY VIEW STYLES */
 
 #container{
     display: grid;
@@ -77,40 +79,40 @@ body{
 
 /* THUMBNAIL IMAGES */
 #item_1{
-    background-image: url(/images/forGallery/marineEcosys.jpg);
+    background-image: url(../images/forGallery/marineEcosys.jpg);
 }
 #item_2{
-    background-image: url(/images/forGallery/oceanAcidification.jpg);
+    background-image: url(../images/forGallery/oceanAcidification.jpg);
 }
 #item_3{
-    background-image: url(/images/forGallery/sustainableFishing.jpg);
+    background-image: url(../images/forGallery/sustainableFishing.jpg);
 }
 #item_4{
-    background-image: url(/images/forGallery/marinePolu.jpg);
+    background-image: url(../images/forGallery/marinePolu.jpg);
 }
 #item_5{
-    background-image: url(/images/forGallery/publicAwareness.webp);
+    background-image: url(../images/forGallery/publicAwareness.webp);
 }
 #item_6{
-    background-image: url(/images/forGallery/tourism.jpeg);
+    background-image: url(../images/forGallery/tourism.jpeg);
 }
 #item_7{
-    background-image: url(/images/forGallery/debrisCleanup.jpg);
+    background-image: url(../images/forGallery/debrisCleanup.jpg);
 }
 #item_8{
-    background-image: url(/images/forGallery/seaLow.jpg);
+    background-image: url(../images/forGallery/seaLaw.jpg);
 }
 #item_9{
-    background-image: url(/images/forGallery/wasteManagement.jpeg);
+    background-image: url(../images/forGallery/wasteManagement.jpeg);
 }
 #item_10{
-    background-image: url(/images/forGallery/coast.jpg);
+    background-image: url(../images/forGallery/coast.jpg);
 }
 #item_11{
-    background-image: url(/images/forGallery/fishing.jpeg);
+    background-image: url(../images/forGallery/fishing.jpeg);
 }
 #item_12{
-    background-image: url(/images/forGallery/ocean.jpg);
+    background-image: url(../images/forGallery/ocean.jpg);
 }
 
 #backIcon{
@@ -173,6 +175,7 @@ body{
 .extended_view_image_preview{
     position: static;
     height: 320px;
+    width: 80%;
     border-radius: 10px;
     margin-top: 100px;
 }
@@ -216,7 +219,7 @@ body{
     display: none;
     justify-content: space-between;
     background-color:white ;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
     animation-name: slideIn;
@@ -224,6 +227,41 @@ body{
     z-index: 11;
 }
 
+.font_selection, .font_size_selection, .color_selection{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.font_selection span:first-child, .font_size_selection span:first-child, .color_selection span:first-child{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.font_selection{
+    margin-left: 40px;
+}
+
+.font_size_selection span:not(:first-child):hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.color_selection{
+    margin-right: 40px;
+}
+
+.font_option{
+    width: 21px;
+    height: 21px;
+}
+
 .font_option:hover{
     cursor: pointer;
+    font-weight: bold;
+}
+
+circle:hover{
+    cursor: pointer;
+    stroke-width: 2;
 }

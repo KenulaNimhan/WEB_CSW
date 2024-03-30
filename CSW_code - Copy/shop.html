@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Styles/shop.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">
+        <img src="Logos/logoMain.png" alt="">
+    </a>
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">FeedBack</a></li>
+            <li><a href="#">SiteMap</a></li>
+            <li><a href="#">Team</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="header">
+    <p class="logo">Our Products</p>
+    <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+</div>
+
+<div class="container">
+    <div id="root"></div>
+    <div class="sidebar">
+        <div class="head"><p>Basket</p></div>
+        <div id="cartItem">Your cart is empty</div>
+        <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">$ 0.00</h2>
+        </div>
+    </div>
+</div>
+<div class="btn">
+    <a href="#checkout" ><button class="checkout" id="checkout">CHECK OUT</button></a>
+</div>
+<div class="cbtn">
+    <button onclick="clearCart()">CLEAR CART</button>
+</div>
+<div class="container1" id="checkout">
+    <h2 style="color: #66ccff;">Checkout Form</h2>
+    <form id="checkoutForm" action="shop2.html" method="post">
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Sl">Srilanka</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="">Select Payment Method</option>
+                <option value="credit_card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+        </div>
+        <div id="sum">
+            total = 0
+        </div>
+        
+        <input type="submit" id="submit" value="Place Order">
+    </form>
+</div>
+<footer>
+    <img src="Logos/logoMain.png" alt="">
+    <span>Life Below Water</span>
+    <span>page editors</span>
+    <div class="page_editor_links">
+        <svg width="100" height="100">
+            <line x1="50" y1="0" x2="50" y2="100" stroke="white"/>
+        </svg>
+        <ul>
+            <li><a href="">Chethana [w2052857]</a></li><br>
+            <li><a href="">Sithum [w2053782]</a></li><br>
+            <li><a href="">Pasan [w2055318]</a></li><br>
+            <li><a href="">Kenula [w2052856]</a></li><br>
+        </ul>
+    </div>
+</footer>
+
+
+<script src="JS/shop.js"></script>
+<script src="JS/header.js"></script>
+</body>
+</html>

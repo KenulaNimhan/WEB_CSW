@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    /* font-family: "Roboto", sans-serif; */
+}
+
+/* HEADER STYLES */
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 6vh;
+    top: 0;
+    padding: 5px 20px;
+    align-items: center;
+    justify-content: space-between;   
+    /* transition: background-color 0.4s ease-in-out; */
+    background-color: beige;
+    z-index: 5;
+}
+/* header.scrolled{
+        background-color:rgb(70, 68, 68);
+        
+} */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+}
+.logo img {
+    width: 80px;
+    height: 60px;
+    margin-right: -10px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar ul li {
+   position:relative;
+   right:10vh;
+   margin: 0 20px;
+}
+.navbar ul li a {
+    font-size: 1.2rem;
+    /* font-weight: 500; */
+    text-decoration: none;
+    color: black;
+    /* transition: background-color 0.4s ease-in-out; */
+}
+/* header.scrolled .navbar ul li a {
+    color: white;
+} */
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #04738f;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.navbar ul li.active::after{
+    width: 100%;
+}
+
+/* FOOTER STYLES */
+
+footer{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    /* width: 100vw; */
+    height: 180px;
+    background-color: black;
+    margin: 0;
+    color: white;
+}
+
+footer > img{
+    width: 150px;
+}
+
+footer > span:nth-child(2){
+    font-size: 40px;
+    font-weight: bold;
+}
+
+footer > span:nth-child(3){
+    margin-left: 40vw;
+}
+
+.page_editor_links{
+    position: absolute;
+    right: 10vw;
+    svg{
+        margin-top: 40px;
+    }
+    ul{
+        padding: 0;
+        float: right;
+        list-style: none;
+    }
+}
+
+.page_editor_links > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.page_editor_links > ul > li > a:hover{
+    text-decoration: underline;
+}
