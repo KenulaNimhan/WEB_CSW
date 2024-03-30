@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="Styles/gallery.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <a href="#" class="logo">
+            <img src="Logos/image.png" alt="">
+        </a>
+        <div class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#">FeedBack</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- PERSONALISATION BAR -->
+    <div class="personalisationBar" id="personalisationBar">
+        <!-- FONT SELECTION -->
+        <span>Font:</span>
+        <span class="roboto-regular font_option" id="roboto-regular">Aa</span>
+        <span class="montserrat font_option" id="montserrat">Aa</span>
+        <span class="eb-garamond font_option" id="eb-garamond">Aa</span>
+        <!-- COLOR SCHEME SELECTION -->
+        <span>Color: </span>
+        <svg width="20" height="20">
+            <circle cx="10" cy="10" r="9" stroke="black" fill="white" stroke-width="1">
+        </svg>
+        <svg width="20" height="20">
+            <circle cx="10" cy="10" r="9" stroke="black" fill="beige" stroke-width="1">
+        </svg>
+        <svg width="20" height="20">
+            <circle cx="10" cy="10" r="9" stroke="black" fill="black" stroke-width="1">
+        </svg>
+    </div>
+
+    <!--GALLERY-->
+    <div id="container">
+        <div class="gallery_item" id="item_1">
+            <div class="gallery_item_name">
+                <span>Marine <br>Ecosystems</span>
+                <span class="read_more_text"><u>Read More</u> &rArr;</span>
+            </div>
+        </div>
+        <div class="gallery_item" id="item_2">
+            <div class="gallery_item_name">
+                <span>Ocean <br>Acidification</span>
+                <span class="read_more_text"><u>Read More</u> &rArr;</span>
+            </div>
+        </div>
+        <div class="gallery_item" id="item_3">
+            <div class="gallery_item_name">
+                <span>Sustainable <br>Fishing</span>
+                <span class="read_more_text"><u>Read More</u> &rArr;</span>
+            </div>
+        </div>
+        <div class="gallery_item" id="item_4">
+            <div class="gallery_item_name">
+                <span>Marine <br>Pollution</span>
+                <span class="read_more_text"><u>Read More</u> &rArr;</span>
+            </div>
+        </div>
+        <div class="gallery_item" id="item_5">
+            <div class="gallery_item_name">
+                <span>Public <br>Awareness</span>
+                <span class="read_more_text"><u>Read More</u> &rArr;</span>
+            </div>
+        </div>
+        <div class="gallery_item" id="item_6">
+            <div class="gallery_item_name">
+                <span>Sustainable <br>Tourism</span>
+                <span class="read_more_text"><u>Read More</u> &rArr;</span>
+            </div>
+        </div>
+        <div class="gallery_item" id="item_7">
+            <div class="gallery_item_name">
+                <span>Marine <br>Debris <br>Cleanup</span>
+                <span class="read_more_text"><u>Read More</u> &rArr;</span>
+            </div>
+        </div>
+        <div class="gallery_item" id="item_8">
+            <div class="gallery_item_name">
+                <span>Sea <br>Law</span>
+                <br>
+                <span class="read_more_text"><u>Read More</u> &rArr;</span>
+            </div>
+        </div>
+        <div class="gallery_item" id="item_9">
+            <div class="gallery_item_name">
+                <span>Waste <br>Management</span>
+                <span class="read_more_text"><u>Read More</u> &rArr;</span>
+            </div>
+        </div>
+        <div class="gallery_item" id="item_10">
+            <div class="gallery_item_name">
+                <span>Coastal <br>Developments</span>
+                <span class="read_more_text"><u>Read More</u> &rArr;</span>
+            </div>
+        </div>
+        <div class="gallery_item" id="item_11">
+            <div class="gallery_item_name">
+                <span>Small <br>Scale <br>Fishers</span>
+                <span class="read_more_text"><u>Read More</u> &rArr;</span>
+            </div>
+        </div>
+        <div class="gallery_item" id="item_12">
+            <div class="gallery_item_name">
+                <span>Ocean <br>Governance</span>
+                <span class="read_more_text"><u>Read More</u> &rArr;</span>
+            </div>
+        </div>
+    </div>
+
+    <!--EXTENDED VIEWS-->
+    <div id="extended_view_container">
+        <span id="backIcon">&times;</span>
+
+        <div class="extended_view" id="item_1_info">
+            <div class="extended_view_heading">
+                <h2>Marine Ecosystems</h2>
+                <hr>
+            </div>
+            <img src="images/forGallery/marineEcosysCrop.jpg" alt="" class="extended_view_image_preview">
+            <div class="extended_view_text">
+                <p>
+                    Marine ecosystems refer to the communities of organisms and their interactions within saltwater environments, including oceans, seas, and coastal areas. These ecosystems are characterized by high biodiversity and complex food webs, and they play a crucial role in regulating global climate, nutrient cycling, and providing resources for human populations
+                </p>
+                
+                <p>
+                    Marine ecosystems can be broadly categorized into various zones based on factors like depth, light availability, and distance from the shore. These zones include the intertidal zone, where the ocean meets the land and experiences periodic exposure to air and waves; the neritic zone, which extends from the low tide line to the edge of the continental shelf and is characterized by relatively shallow and nutrient-rich waters; and the pelagic zone, which encompasses the open ocean and is divided into the epipelagic, mesopelagic, bathypelagic, and abyssopelagic zones based on depth.
+                </p>
+    
+                <p>
+                    Key organisms found in marine ecosystems include phytoplankton, which are microscopic algae that form the base of the marine food chain through photosynthesis; zooplankton, which are small animals that feed on phytoplankton and serve as food for larger marine organisms; marine mammals such as whales, dolphins, and seals; fish species ranging from tiny anchovies to large sharks; and diverse invertebrates like corals, mollusks, and crustaceans.
+                </p>
+    
+                <p>
+                    Human activities such as overfishing, pollution, habitat destruction, and climate change pose significant threats to marine ecosystems, leading to declines in biodiversity, loss of habitats like coral reefs and mangroves, and disruptions to ecosystem functioning. Conservation efforts such as marine protected areas, sustainable fishing practices, and reducing pollution are essential for preserving the health and resilience of marine ecosystems for future generations.
+                </p>
+            </div>
+        </div>
+
+        <div class="extended_view roboto-regular" id="item_2_info">
+            <div class="extended_view_heading">
+                <h2>Ocean Acidification</h2>
+                <hr>
+            </div>
+            <img src="images/forGallery/oceanAcidification.jpg" alt="" class="extended_view_image_preview">    
+            <div class="extended_view_text">
+                <p>
+                    Ocean acidification is a process driven by the absorption of carbon dioxide (CO2) from the atmosphere into the ocean, leading to a decrease in the pH of seawater. When CO2 dissolves in seawater, it reacts with water molecules to form carbonic acid, which increases the concentration of hydrogen ions, consequently lowering the pH and making the water more acidic.
+                </p>
+                
+                <p>
+                    The ocean has absorbed about 30% of the CO2 emitted by human activities since the Industrial Revolution, which has led to a measurable decrease in the pH of surface waters by approximately 0.1 units. While this may seem small, it represents a significant increase in acidity on a logarithmic scale.
+                </p>
+    
+                <p>
+                    Ocean acidification has widespread impacts on marine ecosystems and organisms. One of the most notable effects is on calcifying organisms such as corals, shellfish, and certain types of plankton, whose ability to build and maintain their calcium carbonate shells or skeletons is impaired in more acidic conditions. This can lead to reduced growth rates, weaker shells, and increased susceptibility to predation and disease, ultimately threatening the health of marine ecosystems and the livelihoods of communities dependent on them.
+                </p>
+    
+                <p>
+                    Furthermore, ocean acidification can disrupt marine food webs by affecting the survival, growth, and reproduction of various species, potentially leading to cascading effects throughout entire ecosystems. Additionally, some fish species may experience behavioral changes in response to acidification, impacting their ability to find food, avoid predators, and reproduce.
+                </p>
+    
+                <p>
+                    Addressing ocean acidification requires reducing CO2 emissions at the source to mitigate its underlying cause. Additionally, local management strategies, such as protecting and restoring habitats like coral reefs and seagrass beds, can help enhance the resilience of marine ecosystems to acidification and other stressors.
+                </p>
+            </div>
+        </div>
+    
+        <div class="extended_view" id="item_3_info">
+            <div class="extended_view_heading">
+                <h2>Sustainable Fishing</h2>
+                <hr>
+            </div>
+            <img src="images/forGallery/sustainableFishing.jpg" alt="" class="extended_view_image_preview">
+            <div class="extended_view_text">
+                <p>
+                    Sustainable fishing refers to the practice of harvesting fish and other aquatic organisms in a manner that ensures the long-term health and productivity of the targeted species, as well as the marine ecosystems in which they live. This approach aims to maintain the balance between fishing activities and the natural regeneration of fish populations, thereby preserving biodiversity, supporting livelihoods, and safeguarding food security for present and future generations.
+                </p>
+    
+                <p>Key principles of sustainable fishing include:</p>
+                <ul>
+                    <li>
+                        Setting catch limits: Establishing scientifically informed catch limits based on the population dynamics of fish stocks to prevent overfishing and allow for their sustainable exploitation.
+                    </li>
+                    <br>
+                    <li>
+                        Avoiding destructive fishing methods: Using fishing gear and techniques that minimize habitat damage, bycatch of non-target species, and ecosystem disruption, such as bottom trawling and dynamite fishing.
+                    </li>
+                    <br>
+                    <li>
+                        Protecting critical habitats: Implementing measures to conserve and restore important habitats like coral reefs, seagrass beds, and mangrove forests, which serve as essential nurseries and breeding grounds for many fish species.
+                    </li>
+                    <br>
+                    <li>
+                        Monitoring and enforcement: Implementing effective monitoring, control, and surveillance systems to ensure compliance with fishing regulations and deter illegal, unreported, and unregulated (IUU) fishing activities.
+                    </li>
+                    <br>
+                    <li>
+                        Promoting ecosystem-based management: Adopting holistic approaches to fisheries management that consider the interactions between fish populations, their predators, prey, and the broader marine environment.
+                    </li>
+                    <br>
+                    <li>
+                        Supporting alternative livelihoods: Diversifying economic opportunities for fishing communities through initiatives such as ecotourism, aquaculture, and sustainable seafood certification programs.
+                    </li>
+                </ul>
+                
+                <p>
+                    By adhering to these principles, sustainable fishing practices aim to maintain the resilience of marine ecosystems, conserve biodiversity, and ensure the long-term viability of fisheries as a renewable natural resource. Collaboration among governments, fishing industries, scientists, and local communities is essential for successfully implementing and promoting sustainable fishing practices worldwide.
+                </p>
+            </div>
+        </div>
+    
+        <div class="extended_view" id="item_4_info">
+            <div class="extended_view_heading">
+                <h2>Marine Pollution</h2>
+                <hr>
+            </div>
+            <img src="images/forGallery/marinePolu.jpg" alt="" class="extended_view_image_preview">    
+            <div class="extended_view_text">
+                <p>
+                    Marine pollution refers to the introduction of harmful substances or contaminants into the marine environment, including oceans, seas, estuaries, and coastal areas. These pollutants can originate from various sources, including industrial activities, agricultural runoff, urban runoff, shipping, oil spills, and improper waste disposal.
+                </p>
+                
+                <p>Types of marine pollution include:</p>
+                <ul>
+                    <li>
+                        Chemical pollution: Chemical pollutants such as heavy metals, pesticides, industrial chemicals, and petroleum hydrocarbons can accumulate in marine ecosystems, harming marine organisms and disrupting food webs. These contaminants may lead to toxicity, reproductive issues, and long-term ecological damage.
+                    </li>
+                    <br>
+                    <li>
+                        Plastic pollution: Plastic debris, including microplastics (particles smaller than 5 millimeters), poses a significant threat to marine life. Animals can ingest plastic or become entangled in it, leading to injuries, suffocation, and death. Microplastics can also adsorb and transport other pollutants, exacerbating their impacts.
+                    </li>
+                    <br>
+                    <li>
+                        Oil pollution: Oil spills from tanker accidents, offshore drilling operations, and illegal discharges can have catastrophic effects on marine environments. Oil coats the surface of the water, suffocating marine life, contaminating habitats, and causing long-term damage to coastal ecosystems and economies.
+                    </li>
+                    <br>
+                    <li>
+                        Marine debris: Besides plastics, marine debris encompasses various materials like glass, rubber, metal, and discarded fishing gear. Debris can injure or kill marine animals through ingestion or entanglement, degrade habitats, and transport invasive species.
+                    </li>
+                </ul>
+    
+                <p>
+                    Addressing marine pollution requires international cooperation, legislation, and enforcement to reduce pollutant inputs, improve waste management practices, promote sustainable development, and restore degraded marine ecosystems. Public awareness, community engagement, and technological innovations are also critical for mitigating the impacts of marine pollution and protecting the health of our oceans.
+                </p>
+            </div>
+        </div>
+    
+        <div class="extended_view" id="item_5_info">
+            <div class="extended_view_heading">
+                <h2>Public Awareness</h2>
+                <hr>
+            </div>
+            <img src="images/forGallery/publicAwareness.webp" alt="" class="extended_view_image_preview">    
+            <div class="extended_view_text">
+                <p>
+                    Raising public awareness about preserving marine life is essential for promoting conservation efforts and encouraging sustainable practices to protect ocean ecosystems. Here are some strategies for raising awareness:
+                </p>
+                
+                <ul>
+                    <li>
+                        Education and outreach programs: Developing educational materials, workshops, and interactive exhibits that highlight the importance of marine biodiversity, the threats facing marine ecosystems, and the actions individuals can take to help preserve marine life. These programs can target schools, community centers, and public events to reach diverse audiences.
+                    </li>
+                    <br>
+                    <li>
+                        Public campaigns: Launching public awareness campaigns using various media platforms, including social media, television, radio, and print media, to communicate key messages about the importance of marine conservation. These campaigns can focus on specific issues such as plastic pollution, overfishing, habitat destruction, and climate change, and provide actionable steps for individuals to get involved.
+                    </li>
+                    <br>
+                    <li>
+                        Citizen science initiatives: Engaging the public in scientific research and monitoring projects through citizen science programs focused on marine biodiversity, species distribution, and habitat health. Encouraging individuals to collect data, participate in surveys, and report sightings of marine species can contribute valuable information for conservation efforts while fostering a sense of stewardship.
+                    </li>
+                </ul>
+    
+                <p>
+                    By implementing these strategies and engaging the public in efforts to preserve marine life, we can foster a sense of responsibility and collective action towards protecting our oceans for current and future generations.
+                </p>
+            </div>
+        </div>
+    
+        <div class="extended_view" id="item_6_info">
+            <div class="extended_view_heading">
+                <h2>Sustainable Tourism</h2>
+                <hr>
+            </div>
+            <img src="images/forGallery/tourism.jpeg" alt="" class="extended_view_image_preview">    
+            <div class="extended_view_text">
+                <p>
+                    Sustainable tourism related to marine life involves promoting responsible travel practices that minimize negative impacts on marine ecosystems while maximizing benefits for local communities and conservation efforts. Here are key aspects of sustainable marine tourism:
+                </p>
+                
+                <ul>
+                    <li>
+                        Conservation-focused activities: Encouraging tourists to engage in activities that support marine conservation efforts, such as snorkeling or diving tours that emphasize responsible interactions with marine life, participation in coral reef restoration projects, or wildlife watching tours led by knowledgeable guides who prioritize animal welfare.
+                    </li>
+                    <br>
+                    <li>
+                        Marine protected areas (MPAs): Promoting visitation to well-managed marine protected areas where tourism activities are carefully regulated to minimize ecological disturbance and protect sensitive habitats and species. Supporting the establishment and expansion of MPAs through tourism revenue can provide economic incentives for conservation.
+                    </li>
+                    <br>
+                    <li>
+                        Sustainable infrastructure and operations: Encouraging tourism operators to adopt sustainable practices in their operations, such as minimizing fuel consumption and emissions, reducing waste and plastic use, conserving water resources, and implementing eco-friendly transportation options. Sustainable infrastructure and operations can reduce the ecological footprint of tourism activities on marine environments.
+                    </li>
+                </ul>
+    
+                <p>
+                    By promoting sustainable tourism practices related to marine life, stakeholders can help preserve fragile marine ecosystems, support local communities, and provide meaningful experiences for visitors while ensuring the long-term sustainability of tourism activities.
+                </p>
+            </div>
+        </div>
+    
+        <div class="extended_view" id="item_7_info">
+            <div class="extended_view_heading">
+                <h2>Marine Debris Cleanup</h2>
+                <hr>
+            </div>
+            <img src="images/forGallery/debrisCleanup.jpg" alt="" class="extended_view_image_preview">    
+            <div class="extended_view_text">
+                <p>
+                    Marine debris cleanup efforts are crucial for mitigating the harmful impacts of pollution on ocean ecosystems and marine life. Organizing cleanup activities along coastlines, beaches, and in marine environments helps remove litter, plastic debris, and other waste that threaten marine biodiversity and degrade habitats. These cleanup initiatives not only improve the aesthetic appeal of coastal areas but also contribute to the health and resilience of marine ecosystems by reducing the risk of entanglement, ingestion, and habitat destruction for marine species.
+                </p>
+    
+                <p>
+                    Successful marine debris cleanup requires collaboration among government agencies, non-profit organizations, businesses, and local communities. By mobilizing volunteers and stakeholders, cleanup efforts can cover larger areas and address diverse sources of marine pollution, from beach litter to abandoned fishing gear. Implementing effective waste management practices and recycling initiatives can also help prevent debris from entering marine environments in the first place, complementing cleanup activities and promoting long-term solutions to marine pollution.
+                </p>
+    
+                <p>
+                    Moreover, marine debris cleanup initiatives provide opportunities for public engagement, education, and awareness-raising about the impacts of pollution on marine ecosystems. Participating in cleanup events allows individuals to directly contribute to conservation efforts while learning about the importance of reducing plastic consumption, proper waste disposal, and the need for sustainable practices to protect our oceans. By fostering a sense of environmental stewardship and collective responsibility, marine debris cleanup initiatives can inspire broader action to preserve marine life and safeguard the health of our oceans for future generations.
+                </p>
+            </div>
+        </div>
+    
+        <div class="extended_view" id="item_8_info">
+            <div class="extended_view_heading">
+                <h2>Sea Law</h2>
+                <hr>
+            </div>
+            <img src="images/forGallery/seaLow.jpg" alt="" class="extended_view_image_preview">    
+            <div class="extended_view_text">
+                <p>
+                    Sea law, also known as maritime law or admiralty law, is a body of legal principles and regulations that govern activities and interactions on the seas and oceans. It encompasses a wide range of issues related to navigation, commerce, environmental protection, and the rights and responsibilities of states, vessels, and individuals operating in maritime areas. Sea law is primarily based on international conventions, treaties, customary practices, and national laws, and it plays a crucial role in regulating maritime activities and resolving disputes among maritime stakeholders.
+                </p>
+                
+                <p>Key areas of sea law include:</p>
+                <ul>
+                    <li>
+                        Navigation and safety: Sea law establishes rules and standards for the safe navigation of vessels, including regulations regarding ship registration, navigation aids, collision avoidance, and search and rescue operations. These regulations aim to prevent maritime accidents, protect human life at sea, and minimize environmental risks.
+                    </li>
+                    <br>
+                    <li>
+                        Maritime commerce and trade: Sea law governs commercial activities and transactions conducted at sea, such as shipping, international trade, and marine insurance. It establishes legal frameworks for contracts, carriage of goods by sea, charter agreements, and liability for maritime accidents, ensuring the smooth flow of commerce and facilitating global trade.
+                    </li>
+                    <br>
+                    <li>
+                        Environmental protection: Sea law addresses environmental issues affecting marine ecosystems, including pollution prevention, conservation of marine biodiversity, and sustainable management of marine resources. International agreements such as the United Nations Convention on the Law of the Sea (UNCLOS) and regional conventions regulate activities such as pollution from ships, dumping of waste at sea, and protection of endangered species and habitats.
+                    </li>
+                    <br>
+                    <li>
+                        Jurisdiction and dispute resolution: Sea law defines the jurisdiction of states over maritime areas and provides mechanisms for resolving disputes arising from maritime activities. It establishes rules for the delimitation of maritime boundaries, resolution of conflicts between states, and adjudication of legal disputes through international tribunals, arbitration, or diplomatic negotiations.
+                    </li>
+                </ul>
+    
+                <p>
+                    Overall, sea law plays a critical role in promoting safety, security, and cooperation on the seas, while balancing the interests of states, maritime industries, and the global community in the sustainable use and protection of marine resources
+                </p>
+            </div>
+        </div>
+    
+        <div class="extended_view" id="item_9_info">
+            <div class="extended_view_heading">
+                <h2>Waste Management</h2>
+                <hr>
+            </div>
+            <img src="images/forGallery/wasteManagement.jpeg" alt="" class="extended_view_image_preview">    
+            <div class="extended_view_text">
+                <p>
+                    Marine waste management is a critical aspect of preserving the health and integrity of our oceans and coastal environments. It involves the systematic collection, disposal, and recycling of waste generated by human activities in marine and coastal areas. Effective marine waste management strategies aim to reduce pollution, mitigate ecological harm, and promote sustainable practices to protect marine biodiversity and ecosystems.
+                </p>
+                
+                <p>
+                    One key component of marine waste management is the prevention and reduction of waste generation at its source. This includes implementing measures to minimize the use of single-use plastics, promoting reusable alternatives, and raising awareness about the impacts of marine litter on marine life and habitats. Additionally, waste reduction efforts can focus on improving waste management infrastructure and practices in coastal communities and maritime industries, such as proper waste disposal facilities, recycling programs, and waste-to-energy technologies.
+                </p>
+    
+                <p>
+                    Furthermore, marine waste management involves the cleanup and removal of existing marine debris from coastal areas, beaches, and ocean environments. This often requires coordinated efforts involving government agencies, non-profit organizations, businesses, and local communities to organize cleanup events, deploy cleanup vessels, and implement shoreline monitoring programs. By removing debris from marine environments, these cleanup initiatives help mitigate the negative impacts of pollution on marine ecosystems, prevent harm to wildlife, and preserve the aesthetic and recreational value of coastal areas for present and future generations.
+                </p>
+            </div>
+        </div>
+    
+        <div class="extended_view" id="item_10_info">
+            <div class="extended_view_heading">
+                <h2>Coastal Development</h2>
+                <hr>
+            </div>
+            <img src="images/forGallery/coast.jpg" alt="" class="extended_view_image_preview">    
+            <div class="extended_view_text">
+                <p>
+                    Coastal development refers to human activities and infrastructure development along coastal areas, which are highly dynamic and ecologically sensitive environments where land meets the sea. Coastal development encompasses a wide range of activities, including residential and commercial construction, tourism development, port and harbor infrastructure, agriculture, and industrial facilities. While coastal development can bring economic benefits and opportunities for communities, it also presents significant challenges and risks to coastal ecosystems, habitats, and natural resources.
+                </p>
+                
+                <p>Key aspects of coastal development include:</p>
+                <ul>
+                    <li>
+                        Urbanization and infrastructure: Coastal areas often experience rapid population growth and urbanization, leading to the expansion of cities, towns, and infrastructure along coastlines. This includes the construction of residential buildings, hotels, resorts, roads, ports, marinas, and other facilities to accommodate tourism, trade, and recreation. However, unplanned or poorly managed development can result in habitat loss, fragmentation, pollution, and increased vulnerability to natural hazards such as storm surges and sea level rise.
+                    </li>
+                    <br>
+                    <li>
+                        Tourism and recreation: Coastal areas are popular destinations for tourism and recreation, attracting millions of visitors each year for activities such as swimming, surfing, snorkeling, and beachcombing. Tourism development can stimulate local economies, create jobs, and generate revenue for coastal communities. However, it can also lead to environmental degradation, overexploitation of natural resources, and conflicts between tourists and residents over access to coastal areas and amenities.
+                    </li>
+                    <br>
+                    <li>
+                        Environmental impacts: Coastal development can have significant environmental impacts on coastal ecosystems, including habitat destruction, alteration of hydrology and sediment dynamics, pollution from runoff and sewage discharge, and degradation of water quality. These impacts can affect marine biodiversity, fish populations, coral reefs, wetlands, and other sensitive habitats, leading to declines in ecosystem health and resilience.
+                    </li>
+                    <br>
+                    <li>
+                        Climate change vulnerability: Coastal development exacerbates vulnerability to the impacts of climate change, such as sea level rise, increased storm intensity, and coastal erosion. Rising sea levels and storm surges can inundate low-lying areas, erode coastlines, and threaten infrastructure, property, and human lives. Coastal development in hazard-prone areas without adequate adaptation measures increases the risk of coastal flooding, property damage, and loss of life.
+                    </li>
+                </ul>
+    
+                <p>
+                    Overall, sustainable coastal development requires careful planning, regulation, and management to balance economic development with environmental protection and resilience. Integrated coastal management approaches that consider ecological, social, and economic factors can help minimize negative impacts and promote sustainable development practices that benefit both people and the environment.
+                </p>
+            </div>
+        </div>
+    
+        <div class="extended_view" id="item_11_info">
+            <div class="extended_view_heading">
+                <h2>Small Scale Fishers</h2>
+                <hr>
+            </div>
+            <img src="images/forGallery/fishing.jpeg" alt="" class="extended_view_image_preview">    
+            <div class="extended_view_text">
+                <p>
+                    Small-scale fishers play a crucial role in coastal communities and contribute significantly to global fisheries production, food security, and livelihoods. These fishers typically operate in nearshore waters using traditional or low-impact fishing methods such as handlines, traps, and small nets, and they often rely on small vessels or artisanal fishing boats. The importance of small-scale fishers stems from several key factors:
+                </p>
+                
+                <ul>
+                    <li>
+                        Food security and nutrition: Small-scale fishers provide essential sources of protein and nutrition for coastal communities, particularly in developing countries where fish is a primary source of animal protein. Local fisheries supply fresh seafood to markets and households, contributing to food security, dietary diversity, and nutrition for millions of people worldwide.
+                    </li>
+                    <br>
+                    <li>
+                        Livelihoods and employment: Small-scale fisheries support the livelihoods of millions of people, including fishers, fish processors, traders, and their families. Fishing activities generate employment opportunities and income for coastal communities, particularly in remote or marginalized areas where alternative livelihood options may be limited.
+                    </li>
+                    <br>
+                    <li>
+                        Cultural heritage and traditions: Small-scale fishers often practice traditional fishing techniques and have deep cultural connections to the sea and coastal environments. Fishing traditions, knowledge, and skills are passed down through generations, contributing to cultural identity, social cohesion, and community resilience.
+                    </li>
+                    <br>
+                    <li>
+                        Coastal economies and resilience: Small-scale fisheries contribute to the economic resilience of coastal communities by diversifying local economies and providing a buffer against economic shocks and fluctuations. Income generated from fishing activities supports small businesses, infrastructure development, and social services, helping to build resilient communities in the face of environmental, social, and economic challenges.
+                    </li>
+                </ul>
+    
+                <p>
+                    Overall, recognizing the importance of small-scale fishers and supporting their sustainable livelihoods is essential for promoting food security, poverty alleviation, and environmental conservation in coastal regions. Policies and initiatives that empower small-scale fishers, enhance their access to resources and markets, and promote equitable and inclusive fisheries management can help maximize the socioeconomic benefits of small-scale fisheries while safeguarding marine ecosystems for future generations.
+                </p>
+            </div>
+        </div>
+    
+        <div class="extended_view" id="item_12_info">
+            <div class="extended_view_heading">
+                <h2>Ocean Governance</h2>
+                <hr>
+            </div>
+            <img src="images/forGallery/ocean.jpg" alt="" class="extended_view_image_preview">    
+            <div class="extended_view_text">
+                <p>
+                    Ocean governance refers to the comprehensive framework of laws, policies, institutions, and practices that govern human activities in marine environments and ensure the sustainable use and conservation of ocean resources. With over 70% of the Earth's surface covered by oceans, effective ocean governance is essential for addressing a wide range of interconnected challenges, including overfishing, marine pollution, habitat destruction, climate change, and maritime security threats. Ocean governance involves multiple stakeholders at local, national, regional, and global levels, working collaboratively to manage marine resources and protect marine ecosystems for present and future generations.
+                </p>
+                
+                <p>
+                    At the international level, ocean governance is governed by a complex network of legal instruments, treaties, and conventions, including the United Nations Convention on the Law of the Sea (UNCLOS), which serves as the overarching legal framework for ocean governance. UNCLOS establishes the rights and responsibilities of states in marine areas beyond national jurisdiction and provides principles for the conservation and sustainable use of marine resources, marine scientific research, and the protection of the marine environment. Other international agreements, such as the Convention on Biological Diversity (CBD), the Convention on the Prevention of Marine Pollution by Dumping of Wastes and Other Matter (London Convention), and the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES), complement UNCLOS by addressing specific issues related to marine biodiversity, pollution, and conservation.
+                </p>
+    
+                <p>
+                    At the national and regional levels, ocean governance involves the development and implementation of laws, regulations, and management measures to protect marine ecosystems, regulate maritime activities, and promote sustainable development. Coastal states are responsible for managing their territorial waters and exclusive economic zones (EEZs) in accordance with international law, while regional organizations and initiatives play a key role in coordinating management efforts, sharing information, and addressing transboundary issues. Integrated coastal management (ICM) approaches, which consider social, economic, and environmental factors, are increasingly being adopted to promote holistic and participatory governance of coastal and marine resources.
+                </p>
+    
+                <p>
+                    Effective ocean governance requires collaboration, cooperation, and coordination among governments, intergovernmental organizations, non-governmental organizations (NGOs), the private sector, indigenous communities, and other stakeholders. Multilateral initiatives, such as the United Nations' Sustainable Development Goal 14 (SDG 14) on conservation and sustainable use of the oceans, seas, and marine resources, provide a global framework for advancing ocean governance objectives and promoting international cooperation. By promoting inclusive, transparent, and science-based decision-making processes, ocean governance can help address the complex challenges facing our oceans and ensure their long-term health, productivity, and resilience.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <img src="Logos/image.png" alt="">
+        <span>Life Below Water</span>
+        <span>page editors</span>
+        <div class="page_editor_links">
+            <svg width="100" height="100">
+                <line x1="50" y1="0" x2="50" y2="100" stroke="white"/>
+            </svg>
+            <ul>
+                <li><a href="">Chethana [w2052857]</a></li><br>
+                <li><a href="">Sithum [w2053782]</a></li><br>
+                <li><a href="">Pasan [w2055318]</a></li><br>
+                <li><a href="">Kenula [w2052856]</a></li><br>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="JS/gallery.js"></script>
+</body>
+</html>

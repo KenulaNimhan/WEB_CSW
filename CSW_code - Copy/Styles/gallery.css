@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    max-width: 100%;
+}
+
+/* FONTS */
+
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.header{
+    position: relative;
+    height: 50px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 60px;
+}
+
+.gallery_item{
+    width: 24.6vw;
+    height: 200px;
+    background-color: black;
+    border: 1px solid #ccc;
+    background-size: cover;
+}
+
+.gallery_item:hover{
+    cursor: pointer;
+    .gallery_item_name{
+        width: 60%;
+    }
+}
+
+.gallery_item_name{
+    overflow: hidden;
+    width: 0;
+    height: inherit;
+    transition: .5s ease-in-out;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    span{
+        overflow: hidden;
+        display: inline-block;
+        margin: 20px 0 0 20px;
+        text-decoration: none;
+    }
+    border-radius: 10px;
+}
+
+.read_more_text{
+    display: inline-block;
+    font-size: 15px;
+    font-style: italic;
+    width: 120px;
+}
+
+/* THUMBNAIL IMAGES */
+#item_1{
+    background-image: url(/images/forGallery/marineEcosys.jpg);
+}
+#item_2{
+    background-image: url(/images/forGallery/oceanAcidification.jpg);
+}
+#item_3{
+    background-image: url(/images/forGallery/sustainableFishing.jpg);
+}
+#item_4{
+    background-image: url(/images/forGallery/marinePolu.jpg);
+}
+#item_5{
+    background-image: url(/images/forGallery/publicAwareness.webp);
+}
+#item_6{
+    background-image: url(/images/forGallery/tourism.jpeg);
+}
+#item_7{
+    background-image: url(/images/forGallery/debrisCleanup.jpg);
+}
+#item_8{
+    background-image: url(/images/forGallery/seaLow.jpg);
+}
+#item_9{
+    background-image: url(/images/forGallery/wasteManagement.jpeg);
+}
+#item_10{
+    background-image: url(/images/forGallery/coast.jpg);
+}
+#item_11{
+    background-image: url(/images/forGallery/fishing.jpeg);
+}
+#item_12{
+    background-image: url(/images/forGallery/ocean.jpg);
+}
+
+#backIcon{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 50px;
+    position: fixed;
+    right: 50px;
+    top: 10px;
+    display: none;
+}
+
+#backIcon:hover{
+    cursor: pointer;
+    color: #bbb;
+}
+
+/* EXTENDED VIEW STYLING */
+
+#extended_view_container{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.extended_view{
+    display: none;
+    position: fixed;
+    width: 60vw;
+    height: auto;
+    padding: 0px 10px;
+    top: 50px;
+    bottom: 10vh;
+    left: 20vw;
+    right: 20vw;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    overflow-y: auto;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.extended_view_heading{
+    position: fixed;
+    width: inherit;
+    background-color: white;
+    hr {
+        margin-bottom: 0px;
+    }
+}
+
+.extended_view_image_preview{
+    position: static;
+    height: 320px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+@keyframes slideIn {
+    from {left: 0;}
+    to {left: 20vw;}
+}
+
+.extended_view::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+
+.extended_view::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+.extended_view::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+}
+
+.extended_view::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+   
+/* PERSONALISATION TAB */
+
+.personalisationBar{
+    width: 60vw;
+    position: fixed;
+    top: 10px;
+    left: 20vw;
+    display: none;
+    justify-content: space-between;
+    background-color:white ;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    animation-name: slideIn;
+    animation-duration: 0.6s;
+    z-index: 11;
+}
+
+.font_option:hover{
+    cursor: pointer;
+}
