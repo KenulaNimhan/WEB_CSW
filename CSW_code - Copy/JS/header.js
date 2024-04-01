@@ -1,26 +1,14 @@
-// const navLinks = document.querySelectorAll('.navbar ul li a');
-    
-// // Determines if a given URL matches the current page's URL
-// function isCurrentPage(url) {
-//     return window.location.href === url;
-// }
+// CHANGE HEADER COLOR WHEN SCROLLED
+document.addEventListener('scroll',() => {
+    const header=document.querySelector('header');
+    if(window.scrollY>0){
+        header.classList.add('scrolled')
 
-// navLinks.forEach(function(link) {
-//     // Add 'active' class to the link if it corresponds to the current page
-//     if (isCurrentPage(link.href)) {
-//         link.parentNode.classList.add('active');
-//     }
-    
-//     link.addEventListener('click', function(event) {
-//         // Remove 'active' class from all list items
-//         navLinks.forEach(function(item) {
-//             item.parentNode.classList.remove('active');
-//         });
-        
-//         // Add 'active' class to the clicked list item
-//         link.parentNode.classList.add('active');
-//     });
-// });
+    }
+    else{
+        header.classList.remove('scrolled')
+    }
+ }) 
 
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.navbar ul li a');

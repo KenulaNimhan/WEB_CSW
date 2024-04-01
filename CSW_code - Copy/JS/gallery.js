@@ -56,12 +56,12 @@ document.getElementById("montserrat").addEventListener("click", function() {
     }
 });
     // to "eb-geramond"
-document.getElementById("eb-garamond").addEventListener("click", function() {
+document.getElementById("poppins").addEventListener("click", function() {
     for(let i=0; i<extendedViews.length; i++){
         // REMOVING EXISTING FONT CUSTOMISATIONS
         extendedViews[i].classList.remove("roboto-regular", "montserrat");
         // ADDING CUSTOMISATION
-        extendedViews[i].classList.add("eb-garamond");
+        extendedViews[i].classList.add("poppins");
     }
 });
 

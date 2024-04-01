@@ -169,5 +169,8 @@ function emptycart(){
     }
 }
 document.getElementById("checkout").addEventListener("click",function(){
+    if(total!==0){
+        document.getElementById("checkout_container").style.display = "block";
+    };
     emptycart();
 })

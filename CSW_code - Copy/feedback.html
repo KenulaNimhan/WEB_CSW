@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/feedback.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="Logos/newlogo.jpg" alt="">
+            <label>Oceanic Life</label>
+        </a>
+        <div class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">SiteMap</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="feedback.html">FeedBack</a></li>
+            </ul>
+        </div>
+    </header>
+    <video autoplay muted loop controls id="bgvid">
+        <source src="images/forFeedback/feedback_background.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>FeedBack</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username"type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email"type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="experience">Experience</label>
+                <input id="experience" name="experience"type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="selection1">How did you get to know about us</label>
+                <select name="selection1" id="selection1" class="list">
+                    <option disabled selected>none</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Tik tok">Tik Tok</option>
+                </select>
+                
+            <div class="input-control">
+                 <label>Was this website informative?</label>
+                 <div class="radioselection">
+                    <label for="infoyes">
+                        <input type="radio" id="infoyes" name="informative" value="yes">
+                        Yes
+                    </label>
+                    <label for="infono">
+                        <input type="radio" id="infono" name="informative" value="no">
+                         No
+                    </label>
+                </div>
+                <div class="error"></div>
+            </div>   
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn">&times;</div>
+                    <h1>Thank you For Submitting</h1>
+                    <img src="images/FeedBackImages folder/check-mark-verified.gif" alt="">
+                </div>
+            </div>
+
+            <div class="input-control">
+                <label>Do you have any additional questions or requests?
+                    <textarea name="textarea" id="textarea" cols="35" rows="8">
+                    </textarea>
+                </label>
+            </div>
+
+            <div class="rating-box">
+                <label for="allstars">How was your experience</label>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="error-stars">
+
+                </div>
+            </div>
+            
+       
+            
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="logo_and_name">
+            <img src="Logos/newlogo.jpg" alt="">
+            <span>Oceanic <br>Life</span>
+        </div>
+        <div class="page_editor_links">
+            <span class="pe_div">page editors</span>
+        <ul>
+            <!-- <li><a href="">Chethana [w2052857]</a></li> -->
+            <li><a href="">Sithum Duleka</a></li>
+            <!-- <li><a href="">Pasan [w2055318]</a></li>
+            <li><a href="">Kenula Nimhan</a></li> -->
+        </ul>
+        </div>
+    </footer>
+
+
+    <script defer src="JS/feedback.js"></script>
+    <script src="JS/header.js"></script>
+</body>
+</html>

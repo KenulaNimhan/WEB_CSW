@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+header{
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.student_info_section{
+    margin: auto;
+    width: 80%;
+    height: 90px;
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.pages_created_section{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.pages_created_section span:not(:first-child):hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+.page_info{
+    width: 400px;
+    margin-top: 40px;
+    text-align: center;
+    padding-left: 20px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    display: none;
+    position: absolute;
+    bottom: 16vh;
+    animation: slideUp;
+    animation-duration: 1s;
+}
+
+.page_one_info{
+    left: 25.5vw;
+}
+
+.page_two_info{
+    left: 49vw;
+}
+
+.page_three_info{
+    right: 10px;
+}
+
+.page_links_section{
+    position: absolute;
+    left: 155px;
+    bottom: 50%;
+}
+
+.page_link{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.page_link:hover{
+    text-decoration: underline;
+}
+
+@keyframes slideUp {
+    from {bottom: 0} 
+    to {bottom: 16vh}
+}
+
+@keyframes slideDown {
+    from {bottom: 16vh} 
+    to {bottom: 0}
+}

@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Oceanic Life - Shop</title>
     <link rel="stylesheet" href="Styles/shop.css">
     <link rel="stylesheet" href="Styles/styles.css">
     <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<header>
-    <a href="#" class="logo">
-        <img src="Logos/logoMain.png" alt="">
-    </a>
-    <div class="navbar">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#">FeedBack</a></li>
-            <li><a href="#">SiteMap</a></li>
-            <li><a href="#">Team</a></li>
-        </ul>
-    </div>
-</header>
+    <header>
+        <a href="#" class="logo">
+            <img src="Logos/newlogo.jpg" alt="">
+            <label>Oceanic Life</label>
+        </a>
+        <div class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">SiteMap</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="feedback.html">FeedBack</a></li>
+            </ul>
+        </div>
+    </header>
 
 <div class="header">
     <p class="logo">Our Products</p>
@@ -37,15 +39,21 @@
             <h3>Total</h3>
             <h2 id="total">$ 0.00</h2>
         </div>
+        <div class="btn">
+            <a href="#checkout" ><button class="checkout" id="checkout">CHECK OUT</button></a>
+        </div>
+        <div class="cbtn">
+            <button onclick="clearCart()">CLEAR CART</button>
+        </div>
     </div>
 </div>
-<div class="btn">
+<!-- <div class="btn">
     <a href="#checkout" ><button class="checkout" id="checkout">CHECK OUT</button></a>
 </div>
 <div class="cbtn">
     <button onclick="clearCart()">CLEAR CART</button>
-</div>
-<div class="container1" id="checkout">
+</div> -->
+<div class="container1" id="checkout_container">
     <h2 style="color: #66ccff;">Checkout Form</h2>
     <form id="checkoutForm" action="shop2.html" method="post">
         <div class="form-group">
@@ -88,20 +96,20 @@
         <input type="submit" id="submit" value="Place Order">
     </form>
 </div>
+
 <footer>
-    <img src="Logos/logoMain.png" alt="">
-    <span>Life Below Water</span>
-    <span>page editors</span>
+    <div class="logo_and_name">
+        <img src="Logos/websiteLogo.png" alt="">
+        <span>Oceanic <br>Life</span>
+    </div>
     <div class="page_editor_links">
-        <svg width="100" height="100">
-            <line x1="50" y1="0" x2="50" y2="100" stroke="white"/>
-        </svg>
-        <ul>
-            <li><a href="">Chethana [w2052857]</a></li><br>
-            <li><a href="">Sithum [w2053782]</a></li><br>
-            <li><a href="">Pasan [w2055318]</a></li><br>
-            <li><a href="">Kenula [w2052856]</a></li><br>
-        </ul>
+        <span class="pe_div">page editors</span>
+    <ul>
+        <li><a href="">Chethana Laksika</a></li>
+        <!-- <li><a href="">Sithum [w2053782]</a></li>
+        <li><a href="">Pasan [w2055318]</a></li>
+        <li><a href="">Kenula Nimhan</a></li> -->
+    </ul>
     </div>
 </footer>
 

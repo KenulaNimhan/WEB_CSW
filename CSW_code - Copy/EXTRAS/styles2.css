@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+/* HEADER STYLES */
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 6vh;
+    top: 0;
+    padding: 5px 20px;
+    align-items: center;
+    justify-content: space-between;   
+    transition: background-color 0.4s ease-in-out;
+    background-color: transparent;
+    z-index: 5;
+}
+
+header.scrolled{
+        background-color:rgb(70, 68, 68);
+        
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+}
+.logo img {
+    width: 80px;
+    height: 60px;
+    margin-right: -10px;
+    margin-top: 6px;
+    filter: invert(29%) sepia(63%) saturate(1674%) hue-rotate(163deg) brightness(94%) contrast(97%);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar ul li {
+   position:relative;
+   right:10vh;
+   margin: 0 20px;
+}
+.navbar ul li a {
+    font-size: 1.2rem;
+    /* font-weight: 500; */
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.4s ease-in-out;
+}
+header.scrolled .navbar ul li a {
+    color: white;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #04738f;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.navbar ul li.active::after{
+    width: 100%;
+}
+
+/* FOOTER STYLES */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    /* height: fit-content; */
+    background-color: rgb(70, 68, 68);
+    margin: 0;
+    color: white;
+}
+.logo_and_name{
+    display: flex;
+    align-items: center;
+    width: 65%;
+}
+.logo_and_name > img{
+    width: 120px;
+}
+
+.logo_and_name > span{
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.pe_div{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid white;
+    padding-right: 50px;
+}
+
+.page_editor_links {
+    display: flex;
+}
+
+.page_editor_links ul{
+        /* padding: 0;
+        float: right; */
+        list-style: none;
+        margin-right: 25px;
+}
+
+.page_editor_links > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.page_editor_links > ul > li > a:hover{
+    text-decoration: underline;
+}
